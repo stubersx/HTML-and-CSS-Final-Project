@@ -1,0 +1,46 @@
+* {
+    color: black;
+    font-size: 12pt;
+    background: none;
+    background-color: white;
+    border: none;
+    text-shadow: none;
+    box-shadow: none;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    display: block;
+}
+
+img, script, nav, .graphic, .icon-bar, .open, style {
+    display: none;
+}
+
+aside a:link, aside a:visited, footer a:link, footer a:visited {
+    color: black;
+}
+
+h1, h2 {
+    color: black;
+    font-size: 12pt;
+    margin: 0%;
+    text-align: left;
+    text-shadow: none;
+}
+
+aside p, footer {
+    margin: 0%;
+}
+
+.foot p {
+    text-align: left;
+}
+
+.c1, .c1 p {
+    margin: 0%;
+    padding: 0%;
+}
+
+.first-letter {
+    font-size: 12pt;
+}

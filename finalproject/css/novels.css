@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Oooh Baby');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    margin: 0;
+    font-family: 'Oooh Baby', cursive, serif;
+    font-size: 1em;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 10%;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    font-size: 2em;
+}
+
+.sidenav a {
+    margin: 0% 3% 40% 3%;
+    text-decoration: none;
+    font-size: 1.1em;
+    display: block;
+    transition: all 0.5s;
+}
+
+.sidenav a:link, .sidenav a:visited, footer a:link, footer a:visited {
+    color: white;
+}
+
+.open:hover, .sidenav a:hover, .sidenav a:active {
+    color: red;
+}
+
+.logo {
+    margin: 40% 20%;
+    width: 50%;
+    transition: all 0.5s;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 5% 0%;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+    animation: mymove 5s;
+}
+
+h2 {
+    font-family: cursive, serif;
+    font-size: 1.5em;
+    text-align: center;
+    animation: mymove 5s;
+}
+
+.c1 {
+    font-family: cursive, serif;
+    margin: 5%;
+    padding: 3%;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    transition: all 1s;
+    animation: mymove 5s;
+}
+
+.c1:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.c1 p {
+    text-indent: 2em;
+    margin-bottom: 10%;
+}
+
+.first-letter {
+    font-size: 1.75em;
+}
+
+footer {
+    font-size: 1.1em;
+    width: 100%;
+    margin-top: 5%;
+}
+
+footer p a:hover, footer p a:active {
+    background-color: white;
+    color: black;
+}
+
+.copyright, .contact {
+    text-align: center;
+    margin: 0%;
+}
+
+.icon-bar {
+	width: 20%;
+    margin: 0% 40%;
+}
+
+.icon-bar a {
+    width: 30%;
+	float: left;
+	font-size: 1.5em;
+    margin: 1%;
+    padding: 0% 2%;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.icon-bar a:hover {
+    transform: rotate(360deg);
+}
+
+@media only screen and (min-width: 900px) {
+    .sidenav {
+        padding-top: 5%;
+    }
+    .sidenav a {
+        font-size: 1.5em;
+        margin: 0% 0% 10% 10%;
+    }
+    .icon-bar {
+        width: 10%;
+        margin: 0% 0% 1% 90%;
+    }
+    .c1 {
+        column-count: 3;
+        column-gap: 3%;
+        letter-spacing: 0.1em;
+        line-height: 1.2em;
+        animation: mymove 5s, mymove2 5s 5s both, mymove3 5s 7s;
+    }
+}
+
+@keyframes mymove {
+    0% {letter-spacing: 2em;}
+    50% {
+        letter-spacing: normal;
+        color: black;
+    }
+    100% {color: white;}
+}
+
+@keyframes mymove2 {
+    0% {
+        border: 5px solid rgba(255, 255, 255, 0);
+        column-rule: 5px solid rgba(255, 255, 255, 0);
+    }
+    100% {
+        border: 5px solid rgba(255, 255, 255, 1);
+        column-rule: 5px solid rgba(255, 255, 255, 1);
+    }
+}
+
+@keyframes mymove3 {
+    25% {column-count: 1;}
+    75% {column-count: 5;}
+}
